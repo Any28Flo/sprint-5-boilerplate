@@ -1,14 +1,29 @@
+var url = "http://examen-laboratoria-sprint-5.herokuapp.com/topics/";
+
+
 var cargarPagina = function(){
 	 muestraLista();
 	 cargaModal();
+	 $("#enviarTopic").click(agregarTopic);
 }
+
+var agregarTopic = function (){
+
+	var $autor = $("#autor").val();
+	var $contenido = $("#contenido").val();
+	$.post(url,{author_name: $autor, content: $contenido});
+	muestraLista();
+}
+
+
+
 
 var cargaModal = function (){
 	$('.modal').modal();
 }
 var muestraLista = function (){
 
-	var url = "http://examen-laboratoria-sprint-5.herokuapp.com/topics/";
+	
 	// Mandamos a ejecutar la funcion get
 
 	$.getJSON(url, function(data){
