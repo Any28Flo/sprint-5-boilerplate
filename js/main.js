@@ -1,7 +1,11 @@
 var cargarPagina = function(){
 	 muestraLista();
+	 cargaModal();
 }
 
+var cargaModal = function (){
+	$('.modal').modal();
+}
 var muestraLista = function (){
 
 	var url = "http://examen-laboratoria-sprint-5.herokuapp.com/topics/";

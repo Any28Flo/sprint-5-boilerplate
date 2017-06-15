@@ -19,6 +19,11 @@
           <label for="icon_prefix">Buscar</label>
        </div>
      </div>
+     <!-- Row para las opciones crear,filtrar -->
+     <div class="row">
+          <a class="waves-effect waves-light btn" href="#modal1">Crear Topic</a>
+
+     </div>
      <div class="row">
        <div id="listaTopics">
          <!-- <p>Titulo topic</p>
@@ -32,8 +37,33 @@
     <a href='verTopic.html?topic_id=2'>Algo asi</a><br/>
     <a href='verTopic.html?topic_id=1'>O asi</a>
     <!-- Borar cuando se entienda como pasar info con topic id-->
-    
+    <!-- Zona de modales -->
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>CREAR TOPIC</h4>
+        <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Autor:</label>
+              </div>
+            </div>
+
+            <div class="input-field col s12">
+              <input type="text" class="validate">
+              <label>Contenido:</label>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+            
+
      <!-- jQuery -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
